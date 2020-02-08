@@ -40,11 +40,21 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] What is the purpose of using _sessions_?
 
+Sessions allow the server to store information about the client. This is a fairly versatile tool, but commonly used to save authentication to avoid having to re-enter login information for every request.
+
 - [ ] What does bcrypt do to help us store passwords in a secure manner.
+
+Bcryptjs is a pre-made key derivation function that takes an incoming password hashes it in order to make the stored password not just plain text and vulnerable to leaks.
 
 - [ ] What does bcrypt do to slow down attackers?
 
+Bcryptjs slows down hackers with hashing by making it necessary to first have the hash, know the algorithm used and how many times it was hashed.
+
 - [ ] What are the three parts of the JSON Web Token?
+
+JWT Header: Denotes which algorithm created the token
+JWT Payload: Data that will be stored in the token or “claims”
+JWT Signature: Used to validate a token before it is used
 
 ## Minimum Viable Product
 
